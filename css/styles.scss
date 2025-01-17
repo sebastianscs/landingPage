@@ -62,7 +62,7 @@ body {
 .header {
     position: relative;
     height: 100vh;
-    background: url('background.jpg') no-repeat center center/cover;
+    background: url('../assets/landingPage.jpg') no-repeat center center/cover;
 }
 
 .overlay {
@@ -102,32 +102,54 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    img {
+        width: 375px;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
 }
 
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
+.form-subscribe {
+    display: flex;
+    align-items: center;
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
+    div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        label {
+            position: fixed;
+            color: #777;
+            left: 25px;
+        }
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+    }
 
-.form-subscribe input {
-    width: 70%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-}
-
-.form-subscribe button {
-    padding: 10px;
-    border: none;
-    background: #e50914;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 0 5px 5px 0;
+    button {
+        padding: 10px;
+        border: none;
+        background: #e50914;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 0 5px 5px 0;
+    }
 }
 
 .features {
@@ -157,4 +179,98 @@ body {
     margin: 0 10px;
     text-decoration: none;
     font-size: 0.9rem;
+}
+@media screen and (max-width: 820px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .btn-login {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: 0 10px;
+        img {
+            width: 250px;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+    .form-subscribe {
+        flex-direction: column;
+        div{
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            input {
+                width: 100%;
+                margin-bottom: 10px;
+                border-radius: 5px;
+            }
+               
+        }
+        button {
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    .features {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .feature img {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .hero {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+    .btn-login {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .form-subscribe {
+        input {
+            padding: 8px;
+        }
+
+        button {
+            padding: 8px;
+        }
+    }
+
+    .feature img {
+        width: 60px;
+    }
+
+    .footer-links a {
+        font-size: 0.8rem;
+    }
 }
