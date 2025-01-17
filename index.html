@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Netflix</title>
+    <meta name="description" content="Disfruta de películas, series y más con MiStreaming. Sin compromisos. Cancela cuando quieras y accede desde cualquier dispositivo.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="streaming, películas, series, entretenimiento, sin contrato, MiStreaming">
+    <meta property="og:title" content="MiStreaming: Películas y Series">
+    <meta property="og:description" content="Películas, series y más con MiStreaming. Accede desde cualquier dispositivo. Sin compromisos.">
+    <meta property="og:type" content="website">
+    <title>Landing Page - MiStreaming</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <article class="header">
+    <header class="header">
         <div class="overlay">
             <nav class="navbar">
                 <h1 class="logo">MiStreaming</h1>
                 <button class="btn-login">Iniciar sesión</button>
             </nav>
             <div class="hero">
-                <img src="assets/mistreaming.png" alt="Disfruta en cualquier lugar">
+                <img src="assets/mistreaming.png" alt="Logo de MiStreaming">
                 <h2>Películas, series y mucho más.</h2>
                 <p>Disfruta en cualquier momento. Cancela cuando quieras.</p>
                 <form class="form-subscribe">
                     <div>
-                        <label>Correo electrónico</label>
-                        <input type="email" required>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" required placeholder="Ingresa tu correo">
                     </div>
                     <button type="submit">Empezar</button>
                 </form>
             </div>
         </div>
-    </article>
-    <article>
+    </header>
+    <main>
         <section class="features">
             <div class="feature">
                 <h3>Disfruta en cualquier lugar</h3>
@@ -38,14 +44,15 @@
                 <p>Sin contratos ni compromisos. Cancela cuando quieras.</p>
             </div>
         </section>
-    </article>
-    <article class="footer">
+    </main>
+    <footer class="footer">
         <p>© 2025 MiStreaming. Todos los derechos reservados.</p>
         <nav class="footer-links">
-            <a href="#">Términos de uso</a>
-            <a href="#">Privacidad</a>
-            <a href="#">Ayuda</a>
+            <a href="#" rel="noopener">Términos de uso</a>
+            <a href="#" rel="noopener">Privacidad</a>
+            <a href="#" rel="noopener">Ayuda</a>
         </nav>
-    </article>
+    </footer>
 </body>
+
 </html>
